@@ -1,0 +1,228 @@
+/* ==================== Component Styles ==================== */
+
+/* ==================== Buttons ==================== */
+.btn-primary {
+  display: inline-block;
+  font-family: var(--font-ja);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  padding: 20px 60px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-accent);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent-hover);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary--large {
+  font-size: 24px;
+  padding: 24px 80px;
+}
+
+.btn-primary--white {
+  background-color: var(--color-white);
+  color: var(--color-main);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary--white:hover {
+  background-color: var(--color-base);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .btn-primary {
+    font-size: 18px;
+    padding: 16px 40px;
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .btn-primary--large {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+
+/* ==================== Concept Cards ==================== */
+.concept-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.concept-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.concept-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(236, 174, 15, 0.1);
+  border-radius: 50%;
+  color: var(--color-accent);
+}
+
+.concept-card-title {
+  font-size: var(--fz-h3);
+  font-weight: 700;
+  color: var(--color-main);
+  margin-bottom: var(--space-sm);
+}
+
+.concept-card-text {
+  font-size: var(--fz-body);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* ==================== Flow Steps ==================== */
+.flow-step {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  text-align: center;
+  width: 180px;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--color-accent);
+  transition: all var(--transition-base);
+}
+
+.flow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.flow-step-number {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  font-family: var(--font-en);
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.flow-step-title {
+  font-size: var(--fz-body);
+  font-weight: 700;
+  color: var(--color-main);
+  margin-bottom: var(--space-xs);
+}
+
+.flow-step-text {
+  font-size: var(--fz-small);
+  color: var(--color-text-light);
+}
+
+@media screen and (max-width: 767px) {
+  .flow-step {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* ==================== Section Divider ==================== */
+.section-divider {
+  width: 60%;
+  height: 2px;
+  margin: 0 auto;
+  background: linear-gradient(to right, var(--color-main), var(--color-accent), var(--color-main));
+}
+
+/* ==================== Highlight Text ==================== */
+.text-highlight {
+  background: linear-gradient(transparent 60%, rgba(236, 174, 15, 0.3) 60%);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-main {
+  color: var(--color-main);
+}
+
+/* ==================== Price Display ==================== */
+.price-display {
+  font-family: var(--font-en);
+  font-size: var(--fz-price);
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+.price-display .yen {
+  font-size: 0.6em;
+}
+
+.price-display .tax {
+  font-family: var(--font-ja);
+  font-size: 0.4em;
+  font-weight: 500;
+}
+
+/* ==================== Badge ==================== */
+.badge {
+  display: inline-block;
+  font-size: var(--fz-small);
+  font-weight: 700;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-full);
+}
+
+.badge--accent {
+  background-color: var(--color-accent);
+  color: var(--color-main-dark);
+}
+
+.badge--main {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
+/* ==================== Icon Circle ==================== */
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.icon-circle--large {
+  width: 80px;
+  height: 80px;
+}
+
+.icon-circle--small {
+  width: 48px;
+  height: 48px;
+}
