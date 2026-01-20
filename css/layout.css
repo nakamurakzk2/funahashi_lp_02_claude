@@ -115,26 +115,19 @@ body.intro-active {
 .section-fv {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
 .fv-background {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
   z-index: var(--z-background);
 }
 
 .fv-background img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .fv-overlay {
@@ -144,10 +137,11 @@ body.intro-active {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.15) 70%,
     rgba(0, 0, 0, 0.4) 100%
   );
+  pointer-events: none;
 }
 
 .fv-content {
@@ -159,23 +153,20 @@ body.intro-active {
   text-align: center;
   color: var(--color-white);
   padding: var(--space-md);
-  padding-bottom: 100px;
+  padding-bottom: var(--space-lg);
 }
 
 .fv-cta-area {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-xs);
+  margin-top: var(--space-sm);
 }
 
 .scroll-text {
